@@ -75,7 +75,7 @@ export default function CMD(){
         <div className="page">
             <Background/>
             <div className="pageFg">
-                <PageHeader turns={messages.length} message={"Query Counter:"} visible={true}/>
+                <PageHeader turns={messages.length} message={"Number of messages: "} visible={true}/>
                 <ConsoleOutput soEof={soEof} terminalInputRef = {terminalInputRef} consoleOutput = {stdOutput} loading = {loading} textSpeed = {50} replyDisplayed = {replyDisplayed} setReplyDisplayed={setReplyDisplayed} />
                 <ConsoleInput terminalInputRef={terminalInputRef} handleInputSubmit={handleSend}
                  loading={loading} replyDisplayed={replyDisplayed}/>
